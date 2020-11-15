@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+.title {
+  color: white;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 10vh;
+}
+
+.search-form {
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.search-button {
+  background: #fa709a;
+  border: none;
+  padding: 10px 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(73, 79, 82);
+  color: white;
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* Flex container */
+.about {
+  /*vh = viewport height*/
+  height: 100vh;
+  /*There is a flex container with flex items inside. "display:flex" makes the container flexible*/
+  display: flex;
+  /*Justify-content is used to align flex items. It can be in the center, left, right, with space around each item or just space between each item (but not before and after)*/
+  justify-content: space-around;
+  /*flex-wrap specifies if the element should wrap or not (If they wrap, when they run out of space, they continue below. If they don't, they shrink to fit in only one line)*/
+  flex-wrap: wrap;
+  /*flex-direction indicates in which direction should the items stack. In a column or a row*/
+  flex-direction: column;
+  /*align-items means that you can align items in the middle, in the top, in the end or stretch to fill the whole container*/
+  align-items: center;
+  /*flex-flow is a shorthand for flex-direction and flex-wrap*/
+  /*align-content is used to align the lines of the items for when there is more than one line of items*/
+}
+
+.textAbout {
+  background: rgb(241, 243, 241);
+  padding: 5%;
+  width: 60%;
 }
