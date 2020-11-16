@@ -2,6 +2,9 @@
   min-height: 100vh;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
+.text {
+  font-family: "Montserrat", sans-serif;
+}
 .title {
   color: white;
   text-align: center;
@@ -34,6 +37,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.recipes a {
+  text-decoration: none;
+  color: black;
+}
 
 nav {
   display: flex;
@@ -54,6 +61,7 @@ nav {
 
 .nav-link {
   color: white;
+  text-decoration: none;
 }
 
 /* Flex container */
@@ -78,4 +86,58 @@ nav {
   background: rgb(241, 243, 241);
   padding: 5%;
   width: 60%;
+  border-radius: 10px;
+}
+
+.recipeDetail {
+  position: relative;
+  margin: 10vh 35vh;
+  background: white;
+  text-align: center;
+  padding: 10vh;
+  border-radius: 10px;
+}
+.recipeDetail ul li {
+  list-style-type: none;
+}
+.tableAndImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.imageRecipeDetail {
+  border-radius: 50%;
+}
+
+.instructionButton {
+  background-color: #fa709a;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 25px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.instructionButton:hover {
+  background-color: #f5457a;
+}
+
+.nutritionTable {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* position: absolute;
+  margin: auto; */
+}
+
+.nutritionTable th {
+  background-color: #666666;
+  color: white;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #bbbbbb;
 }

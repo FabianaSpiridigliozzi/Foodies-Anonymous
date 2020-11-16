@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav>
-      <h3>Logo</h3>
+    <nav className="text">
+      <img src="./logo.jpg" alt="logo" />
       <ul className="nav-links">
         <Link className="nav-link" to="/about">
           <li>About</li>

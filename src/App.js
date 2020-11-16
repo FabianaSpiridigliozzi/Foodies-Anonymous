@@ -3,6 +3,7 @@
 import About from "./About";
 import SearchRecipes from "./SearchRecipes";
 import Nav from "./Nav";
+import RecipeDetail from "./RecipeDetail";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { RecipeProvider } from "./RecipesContext";
@@ -16,7 +17,7 @@ function App() {
           <Switch>
             <Route path="/about" component={About} />
             <Route path="/searchrecipes" exact component={SearchRecipes} />
-            {/* <Route path="/searchrecipes/:id" component={} /> */}
+            <Route path="/searchrecipes/:id" component={RecipeDetail} />
             <Route path="/" exact component={Home} />
           </Switch>
         </div>
